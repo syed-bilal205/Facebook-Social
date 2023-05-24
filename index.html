@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Book</title>
+    <!-- Style Link -->
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+
+    <nav>
+      <div class="nav-left">
+        <a href="profile.html">
+        <img src="./images/logo.png" alt="LOGO" class="logo" />
+      </a>
+        <ul>
+          <li><img src="./images//notification.png" alt="notification" /></li>
+          <li><img src="./images/inbox.png" alt="INBOX" /></li>
+          <li><img src="./images/video.png" alt="VIDEO" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="./images/search.png" alt="SEARCH" />
+        
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="user-icon online" onclick="handleSettingsToggle()">
+          <img src="./images/profile-pic.png" alt="user" />
+        </div>
+      </div>
+    
+
+      <div class="setting-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="/images/profile-pic.png" alt="profile" />
+            <div>
+              <p>Muheed</p>
+              <a href="profile.html">See Your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="/images/feedback.png" alt="profile" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img
+              src="./images/setting.png"
+              alt="setting"
+              class="setting-icon"
+            />
+            <a href="#"
+              >settings & Privacy
+              <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/help.png" alt="setting" class="setting-icon" />
+            <a href="#"
+              >Help & Support <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img
+              src="./images/display.png"
+              alt="setting"
+              class="setting-icon"
+            />
+            <a href="#"
+              >Display & Accessibility
+              <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/logout.png" alt="setting" class="setting-icon" />
+            <a href="#"
+              >Logout <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR SECTION END -->
+
+    <!--MAIN SECTION START -->
+
+    <div class="container">
+      <div class="left-side-bar">
+        <div class="imp-links">
+          <a href="#"><img src="./images/news.png" alt="NEWS" />Latest News</a>
+          <a href="#"><img src="./images/friends.png" alt="NEWS" />Friends</a>
+          <a href="#"><img src="./images/group.png" alt="NEWS" />Group</a>
+          <a href="#"
+            ><img src="./images/marketplace.png" alt="NEWS" />Market Place</a
+          >
+          <a href="#"><img src="./images/watch.png" alt="NEWS" />Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your shortcuts</p>
+          <a href="#"
+            ><img src="./images/shortcut-1.png" alt="short cut" />Web
+            Developer</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-2.png" alt="short cut" />Website
+            Experts</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-3.png" alt="short cut" />Full Stack
+            Development</a
+          >
+          <a href="#"
+            ><img src="./images/shortcut-4.png" alt="short cut" />Web Web Design
+            Course</a
+          >
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story">
+            <img src="./images/upload.png" alt="upload" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story-1">
+            <img src="./images/member-1.png" alt="upload" />
+            <p>Lily</p>
+          </div>
+          <div class="story story-2">
+            <img src="./images/member-2.png" alt="upload" />
+            <p>Sabir</p>
+          </div>
+          <div class="story story-3">
+            <img src="./images/member-3.png" alt="upload" />
+            <p>Natasha</p>
+          </div>
+          <div class="story story-4">
+            <img src="./images/member-4.png" alt="upload" />
+            <p>Aayan</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="/images/profile-pic.png" alt="profile" />
+            <div>
+              <p>Muheed</p>
+              <small>Public</small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind Muheed"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"
+                ><img src="/images/live-video.png" alt="video" />Live Video</a
+              >
+              <a href="#"
+                ><img src="/images/photo.png" alt="Photo" />Photo/Video</a
+              >
+              <a href="#"
+                ><img
+                  src="/images/feeling.png"
+                  alt="feeling"
+                />Feeling/Activity</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/images/profile-pic.png" alt="profile" />
+              <div>
+                <p>Muheed</p>
+                <span>Feb 24 2023,13:14 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+            deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+            Placeat?
+          </p>
+          <img
+            src="./images/feed-image-1.png"
+            alt="feed-image"
+            class="post-img"
+          />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="Like" />120</div>
+              <div><img src="./images/comments.png" alt="Like" />80</div>
+              <div><img src="./images/share.png" alt="Like" />5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="profile" />
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/images/profile-pic.png" alt="profile" />
+              <div>
+                <p>Muheed</p>
+                <span>Feb 24 2023,13:14 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+            deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+            Placeat?
+          </p>
+          <img
+            src="./images/feed-image-2.png"
+            alt="feed-image"
+            class="post-img"
+          />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="Like" />120</div>
+              <div><img src="./images/comments.png" alt="Like" />80</div>
+              <div><img src="./images/share.png" alt="Like" />5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="profile" />
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/images/profile-pic.png" alt="profile" />
+              <div>
+                <p>Muheed</p>
+                <span>Feb 24 2023,13:14 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+            deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+            Placeat?
+          </p>
+          <img
+            src="./images/feed-image-3.png"
+            alt="feed-image"
+            class="post-img"
+          />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="Like" />120</div>
+              <div><img src="./images/comments.png" alt="Like" />80</div>
+              <div><img src="./images/share.png" alt="Like" />5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="profile" />
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/images/profile-pic.png" alt="profile" />
+              <div>
+                <p>Muheed</p>
+                <span>Feb 24 2023,13:14 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+            deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+            Placeat?
+          </p>
+          <img
+            src="./images/feed-image-4.png"
+            alt="feed-image"
+            class="post-img"
+          />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="Like" />120</div>
+              <div><img src="./images/comments.png" alt="Like" />80</div>
+              <div><img src="./images/share.png" alt="Like" />5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="profile" />
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/images/profile-pic.png" alt="profile" />
+              <div>
+                <p>Muheed</p>
+                <span>Feb 24 2023,13:14 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+            deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+            Placeat?
+          </p>
+          <img
+            src="./images/feed-image-5.png"
+            alt="feed-image"
+            class="post-img"
+          />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png" alt="Like" />120</div>
+              <div><img src="./images/comments.png" alt="Like" />80</div>
+              <div><img src="./images/share.png" alt="Like" />5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" alt="profile" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side-bar">
+        <div class="side-bar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>MAY</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p>Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>27</h3>
+            <span>NOVEMBER</span>
+          </div>
+          <div class="right-event">
+            <h4>BIRTHDAY</h4>
+            <p>Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="side-bar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+
+        <img
+          src="./images/advertisement.png"
+          alt="advertisement"
+          class="side-bar-ads"
+        />
+
+        <div class="side-bar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-1.png" alt="Member" />
+          </div>
+          <p>Lily</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-2.png" alt="Member" />
+          </div>
+          <p>Aayan</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-3.png" alt="Member" />
+          </div>
+          <p>Rose</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN SECTION END -->
+
+    <!-- Index.js Link -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

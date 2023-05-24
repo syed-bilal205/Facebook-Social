@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <!-- Style Link -->
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+        <img src="./images/logo.png" alt="LOGO" class="logo" />
+      </a>
+        <ul>
+          <li><img src="./images//notification.png" alt="notification" /></li>
+          <li><img src="./images/inbox.png" alt="INBOX" /></li>
+          <li><img src="./images/video.png" alt="VIDEO" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="./images/search.png" alt="SEARCH" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="user-icon online" onclick="handleSettingsToggle()">
+          <img src="./images/profile-pic.png" alt="user" />
+        </div>
+      </div>
+
+      <div class="setting-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="/images/profile-pic.png" alt="profile" />
+            <div>
+              <p>Muheed</p>
+              <a href="index.html">News Feed</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="/images/feedback.png" alt="profile" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img
+              src="./images/setting.png"
+              alt="setting"
+              class="setting-icon"
+            />
+            <a href="#"
+              >settings & Privacy
+              <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/help.png" alt="setting" class="setting-icon" />
+            <a href="#"
+              >Help & Support <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img
+              src="./images/display.png"
+              alt="setting"
+              class="setting-icon"
+            />
+            <a href="#"
+              >Display & Accessibility
+              <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/logout.png" alt="setting" class="setting-icon" />
+            <a href="#"
+              >Logout <img src="./images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR SECTION END -->
+
+    <!--MAIN SECTION START -->
+
+    <div class="profile-container">
+      <img src="./images/cover.png" alt="cover image" class="cover-img" />
+      <div class="profile-details">
+        <div class="profile-left">
+          <div class="profile-row">
+            <img src="./images/profile.png" alt="Profile" class="profile-img" />
+            <div>
+              <h3>Muheed Bin Tariq</h3>
+              <p>120 Friends - 20 Mutual</p>
+              <img src="./images/member-1.png" alt="Member" />
+              <img src="./images/member-2.png" alt="Member" />
+              <img src="./images/member-3.png" alt="Member" />
+              <img src="./images/member-4.png" alt="Member" />
+            </div>
+          </div>
+        </div>
+        <div class="profile-right">
+          <button type="button">
+            <img src="./images/add-friends.png" alt="" /> Friends
+          </button>
+          <button type="button">
+            <img src="./images/message.png" alt="" />Message
+          </button>
+          <br />
+          <a href="#"><img src="./images/more.png" alt="more" /></a>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p>
+              Believe in yourself you can do anything but the key for the is
+              believe in yourself..
+              <img src="./images/feeling.png" alt="" />
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <img src="./images/profile-job.png" alt="" /> Web Developer
+              </li>
+              <li><img src="./images/profile-study.png" alt="" /> Student</li>
+              <li>
+                <img src="./images/profile-home.png" alt="" /> From Pakistan
+              </li>
+              <li>
+                <img src="./images/profile-location.png" alt="" /> Live In
+                Karachi
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#">All Photos</a>
+            </div>
+            <div class="photo-box">
+              <div>
+                <img src="./images/photo1.png" alt="" />
+                <img src="./images/photo2.png" alt="" />
+                <img src="./images/photo3.png" alt="" />
+                <img src="./images/photo4.png" alt="" />
+                <img src="./images/photo5.png" alt="" />
+                <img src="./images/photo6.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="/images/profile-pic.png" alt="profile" />
+              <div>
+                <p>Muheed</p>
+                <small>Public</small>
+              </div>
+            </div>
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="What's on your mind Muheed"
+              ></textarea>
+              <div class="add-post-links">
+                <a href="#"
+                  ><img src="/images/live-video.png" alt="video" />Live Video</a
+                >
+                <a href="#"
+                  ><img src="/images/photo.png" alt="Photo" />Photo/Video</a
+                >
+                <a href="#"
+                  ><img
+                    src="/images/feeling.png"
+                    alt="feeling"
+                  />Feeling/Activity</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="/images/profile-pic.png" alt="profile" />
+                <div>
+                  <p>Muheed</p>
+                  <span>Feb 24 2023,13:14 pm</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="post-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+              deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+              Placeat?
+            </p>
+            <img
+              src="./images/feed-image-1.png"
+              alt="feed-image"
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="./images/like-blue.png" alt="Like" />120</div>
+                <div><img src="./images/comments.png" alt="Like" />80</div>
+                <div><img src="./images/share.png" alt="Like" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="/images/profile-pic.png" alt="profile" />
+                <div>
+                  <p>Muheed</p>
+                  <span>Feb 24 2023,13:14 pm</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="post-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+              deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+              Placeat?
+            </p>
+            <img
+              src="./images/feed-image-2.png"
+              alt="feed-image"
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="./images/like-blue.png" alt="Like" />120</div>
+                <div><img src="./images/comments.png" alt="Like" />80</div>
+                <div><img src="./images/share.png" alt="Like" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="/images/profile-pic.png" alt="profile" />
+                <div>
+                  <p>Muheed</p>
+                  <span>Feb 24 2023,13:14 pm</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="post-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+              deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+              Placeat?
+            </p>
+            <img
+              src="./images/feed-image-3.png"
+              alt="feed-image"
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="./images/like-blue.png" alt="Like" />120</div>
+                <div><img src="./images/comments.png" alt="Like" />80</div>
+                <div><img src="./images/share.png" alt="Like" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="/images/profile-pic.png" alt="profile" />
+                <div>
+                  <p>Muheed</p>
+                  <span>Feb 24 2023,13:14 pm</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="post-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+              deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+              Placeat?
+            </p>
+            <img
+              src="./images/feed-image-4.png"
+              alt="feed-image"
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="./images/like-blue.png" alt="Like" />120</div>
+                <div><img src="./images/comments.png" alt="Like" />80</div>
+                <div><img src="./images/share.png" alt="Like" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="/images/profile-pic.png" alt="profile" />
+                <div>
+                  <p>Muheed</p>
+                  <span>Feb 24 2023,13:14 pm</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="post-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nam
+              deleniti rerum sapiente. Ipsum iusto ipsam cumque quae dicta.
+              Placeat?
+            </p>
+            <img
+              src="./images/feed-image-5.png"
+              alt="feed-image"
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="./images/like-blue.png" alt="Like" />120</div>
+                <div><img src="./images/comments.png" alt="Like" />80</div>
+                <div><img src="./images/share.png" alt="Like" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN SECTION END -->
+
+    <!-- Index.js Link -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>
